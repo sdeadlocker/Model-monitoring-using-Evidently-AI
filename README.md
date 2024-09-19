@@ -42,10 +42,10 @@ pip install pandas evidently openpyxl
 ## Output Files
 
 - **Data Drift Report**:
-    ![Data Drift Report](Images/data-drift-report.png)
+    ![Data Drift Report](Image/data-drift-report.png)
 
 - **Target Drift Report**:
-    ![Target Drift Report](Images/target-drift-report.png)
+    ![Target Drift Report](Image/target-drift-report.png)
 
 - **`monitoring_results.json`**: Contains the final JSON output with metadata, drift results, and statistical summary.
 - **`monitoring_results.xlsx`**: Excel file containing metadata, data drift, target drift, and feature statistics.
