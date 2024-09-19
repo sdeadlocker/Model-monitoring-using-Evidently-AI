@@ -1,6 +1,6 @@
 # Model Data Monitoring Script
 
-This Python script monitors model performance and data drift between a reference dataset (e.g., training data) and a current dataset (e.g., data in production). It generates reports for data drift, target drift, and statistical metrics for numerical features, and stores results along with metadata in both JSON and Excel formats.
+This Python script monitors model performance and data drift between a reference dataset (e.g., training data) and a current dataset (e.g., data in production) for classification Problem. It generates reports for data drift, target drift, and statistical metrics for numerical features, and stores results along with metadata in both JSON and Excel formats.
 
 ## Features
 - **Metadata Generation**: Captures event metadata such as the timestamp, record count, source system, user, and model version.
