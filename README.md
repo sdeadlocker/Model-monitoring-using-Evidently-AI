@@ -39,6 +39,16 @@ pip install pandas evidently openpyxl
    - A JSON file with metadata, drift metrics, and statistics (`monitoring_results.json`)
    - An Excel file summarizing the results (`monitoring_results.xlsx`)
   
+## Output Files
+
+- **Data Drift Report**:
+    ![Data Drift Report](Images/data-drift-report.png)
+
+- **Target Drift Report**:
+    ![Target Drift Report](Images/target-drift-report.png)
+
+- **`monitoring_results.json`**: Contains the final JSON output with metadata, drift results, and statistical summary.
+- **`monitoring_results.xlsx`**: Excel file containing metadata, data drift, target drift, and feature statistics.
 
 ### Notes:
 - Replace `monintoring.py` with the actual name of your script.
