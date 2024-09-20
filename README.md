@@ -65,3 +65,6 @@ pip install pandas evidently openpyxl
 - Replace `monintoring.py` with the actual name of your script.
 - Update the `usage example` section if there are additional parameters or specifics for data loading.
      
+### References:
+- https://www.evidentlyai.com/ml-in-production/concept-drift
+- https://github.com/evidentlyai/evidently/tree/main/examples/how_to_questions
