@@ -1,6 +1,17 @@
-# Model Data Monitoring
+# Model Monitoring Scripts
 
-This Python script monitors model performance and data drift between a reference dataset (e.g., training data) and a current dataset (e.g., data in production) for classification Problem. It generates reports for data drift, target drift, and statistical metrics for numerical features, and stores results along with metadata in both JSON and Excel formats.
+This repository contains two Python scripts for monitoring model performance, detecting data drift, and identifying new classes in the target variable for classification problems.
+
+## Scripts
+
+### 1. `monitoring.py`
+
+This Python script monitors model performance and data drift between a reference dataset (e.g., training data) and a current dataset (e.g., data in production) for classification problems. It generates reports for data drift, target drift, and statistical metrics for numerical features, and stores results along with metadata in both JSON and Excel formats.
+
+### 2. `monitoring_new_class.py`
+
+This Python script detects the presence of new classes in the target variable of a current dataset compared to a reference dataset (e.g., training data) for classification problems. It generates reports highlighting newly detected classes and stores the results along with metadata in both JSON and Excel formats.
+
 
 ## Features
 - **Metadata Generation**: Captures event metadata such as the timestamp, record count, source system, user, and model version.
