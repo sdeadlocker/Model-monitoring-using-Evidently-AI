@@ -1,6 +1,22 @@
-# Model Monitoring Scripts
+# 
 
+
+# Model Monitoring and Drift Detection
+In many real-world applications, machine learning models are trained offline and deployed for inference in production environments. Over time, changes in the underlying data can lead to model performance degradation. One critical issue that signals the need for model retraining is the occurrence of data drift—a change in the distribution of input features compared to the original training data.
 This repository contains two Python scripts for monitoring model performance, detecting data drift, and identifying new classes in the target variable for classification problems.
+
+## Statistical Tests for Drift Detection
+The monitoring process relies on several well-established statistical tests to detect drift and monitor model performance. These tests are automatically selected based on the characteristics of the dataset. Evidently AI employs a set of five key statistical tests for this purpose:
+
+- 1. **Population Stability Index (PSI)**: Measures changes in the distribution of a feature over time. It's widely used for monitoring data drift in production.
+
+- 2. **KS P-Value (Kolmogorov-Smirnov Test)**: Compares the distributions of the input feature in the training and production datasets.
+
+- 3. **Jensen-Shannon Divergence (JSD)**: A symmetric measure used to assess how different two probability distributions are.
+
+- 4. **Kullback-Leibler Divergence (KL Divergence)**: A non-symmetric measure of how one probability distribution diverges from a second, reference distribution.
+
+- 5. **Wasserstein Distance**: Also known as the "Earth Mover's Distance," it calculates the minimum amount of work needed to transform one distribution into another.
 
 ## Scripts
 
