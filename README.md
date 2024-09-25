@@ -1,9 +1,6 @@
-# 
-
-
 # Model Monitoring and Drift Detection
 In many real-world applications, machine learning models are trained offline and deployed for inference in production environments. Over time, changes in the underlying data can lead to model performance degradation. One critical issue that signals the need for model retraining is the occurrence of data drift—a change in the distribution of input features compared to the original training data.
-This repository contains two Python scripts for monitoring model performance, detecting data drift, and identifying new classes in the target variable for classification problems.
+This repository contains three Python scripts for monitoring model performance, detecting data drift using traditional statistical tests and Evidently AI, and identifying emerging classes in the target variable for classification problems.
 
 ## Statistical Tests for Drift Detection
 The monitoring process relies on several well-established statistical tests to detect drift and monitor model performance. These tests are automatically selected based on the characteristics of the dataset. Evidently AI employs a set of five key statistical tests for this purpose:
@@ -28,6 +25,8 @@ This Python script monitors model performance and data drift between a reference
 
 This Python script detects the presence of new classes in the target variable of a current dataset compared to a reference dataset (e.g., training data) for classification problems. It generates reports highlighting newly detected classes and stores the results along with metadata in both JSON and Excel formats.
 
+### 3. `stat_metrics.py`
+This script generates sample data with binary target labels and predicted probabilities, then computes various performance metrics including accuracy, F1 score, AUC, PSI, and K-S statistic. It saves the input data, output predictions, and metrics to CSV files. Additionally, it visualizes the Probability Stability Index (PSI) distribution for comparing expected and actual values
 
 ## Features
 - **Metadata Generation**: Captures event metadata such as the timestamp, record count, source system, user, and model version.
